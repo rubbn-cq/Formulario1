@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+  <div class="container">
+    <h2>Formulario de Registro</h2>
+    <form action="#" method="post">
+      <label>Nombre:</label><br>
+      <input type="text" name="nombre"><br><br>
 
+      <label>Apellido:</label><br>
+      <input type="text" name="apellido"><br><br>
+
+      <label>Edad:</label><br>
+      <input type="number" name="edad"><br><br>
+
+      <label>Género:</label>
+      <div class="genero">
+        <input type="radio" id="sexoM" name="sexo" value="masculino">
+        <label for="sexoM">Masculino</label><br>
+        <input type="radio" id="sexoF" name="sexo" value="femenino">
+        <label for="sexoF">Femenino</label>
+        <input type="radio" id="Otro" name="sexo" value="otro">
+        <label for="Otro">Otro</label>
+      </div>
+
+      <label>Correo electrónico:</label><br>
+      <input type="email" name="correo"><br><br>
+
+      <label>Contraseña:</label><br>
+      <input type="password" name="password"><br><br>
+
+      <label>Fecha de nacimiento:</label><br>
+      <input type="date" name="fecha"><br><br>
+
+      <label>País:</label><br>
+      <select name="pais">
+        <option value="El Salvador">El Salvador</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Otro">Otro</option>
+      </select><br><br>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="terminos" name="terminos">
+        <label for="terminos">Sí, acepto</label>
+      </div>
+
+      <input type="submit" value="Registrarse">
+    </form>
+  </div>
+</body>
 </html>
